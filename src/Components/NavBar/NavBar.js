@@ -37,7 +37,7 @@ function NavBar() {
   }
 
   function handleShowSettings(e){
-    setShowSettings(true);
+    setShowSettings(prev => !prev);
   }
 
   function closeOpenMenu(){
@@ -46,11 +46,7 @@ function NavBar() {
 
   React.useEffect(()=>{
     
-    document.addEventListener('mousedown', closeOpenMenu);
-
-    return ()=>{
-      document.removeEventListener('mousedown', closeOpenMenu)
-    }
+ 
 
   }, [])
  
