@@ -1,7 +1,7 @@
 .tab-container{
     overflow-x: auto;
     margin: 0 auto;
-    width: fit-content;
+    width: 100%;
 }
 .tab + .tab{
     margin-left: 2em;
