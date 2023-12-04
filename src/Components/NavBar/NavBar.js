@@ -29,9 +29,10 @@ function NavBar() {
       console.log(data);
       navigate('/');
 
-      
     } catch (error) {
       console.log(error);
+    }finally{
+      navigate('/');
     }
     
   }
